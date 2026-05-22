@@ -5,8 +5,10 @@ import { useEffect, useState } from "react";
 
 export function MobileFallback() {
   const [isMobile, setIsMobile] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -16,7 +18,7 @@ export function MobileFallback() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  if (!isMobile) return null;
+  if (!isMounted || !isMobile) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0a0a]">

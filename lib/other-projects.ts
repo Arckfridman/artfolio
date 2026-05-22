@@ -98,7 +98,6 @@ export const otherProjects: OtherProject[] = [
       "/other/7 - labels/01-04.webp",
       "/other/7 - labels/01-05.webp",
       "/other/7 - labels/01-06.webp",
-      "/other/7 - labels/01-07.webp",
     ],
     iconSrc: "/other/7 - labels/01-01.webp",
     thumbGradient: "linear-gradient(170deg, #141414 35%, #9d4edd 90%)",
