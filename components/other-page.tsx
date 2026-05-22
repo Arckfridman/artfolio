@@ -21,7 +21,7 @@ export function OtherPage() {
       <main className="relative z-10 flex min-h-[calc(100vh-49px)] flex-col px-6 pb-10 pt-10 sm:px-12 md:px-16 lg:px-24">
         <div className="relative mx-auto flex w-full flex-1 flex-col items-center justify-start pt-[clamp(0.75rem,2vh,1.5rem)]">
           <div className="flex w-full flex-col items-center">
-            <div className="grid w-full grid-cols-1 items-center md:grid-cols-[1fr_auto_7.5rem] md:gap-x-6 lg:grid-cols-[1fr_auto_9rem] lg:gap-x-10">
+            <div className="grid w-full grid-cols-1 items-center md:grid-cols-[1fr_auto_1fr] md:gap-x-6 lg:grid-cols-[1fr_auto_1fr] lg:gap-x-10">
               <div className="hidden md:block" aria-hidden />
 
               <div
