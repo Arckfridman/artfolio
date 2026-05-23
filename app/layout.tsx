@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: "Strategy, identities, websites, and a whole mess of other stuff.",
     images: [
       {
-        url: "/arckpreview.webp",
+        url: "/arck_preview.webp",
         width: 1200,
         height: 630,
         alt: "Artur Portfolio",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Artur",
     description: "Strategy, identities, websites, and a whole mess of other stuff.",
-    images: ["/arckpreview.webp"],
+    images: ["/arck_preview.webp"],
   },
 };
 
