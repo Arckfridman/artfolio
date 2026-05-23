@@ -7,12 +7,26 @@ import {
   websitesDescription,
   websitesVideoSrc,
 } from "@/lib/websites-content";
+import { useState, useRef, useEffect } from "react";
 
 const TEXT_DELAY = 0.55;
 const FRAME_HEIGHT = "calc((100dvh - 49px) * 0.6)";
 
 export function WebsitesPage() {
   const { navigateWithWipe } = useWipe();
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      const handleLoadedData = () => {
+        setIsVideoLoaded(true);
+      };
+      video.addEventListener("loadeddata", handleLoadedData);
+      return () => video.removeEventListener("loadeddata", handleLoadedData);
+    }
+  }, []);
 
   return (
     <SiteChrome>
@@ -25,13 +39,19 @@ export function WebsitesPage() {
               className="relative z-20 mx-auto aspect-[16/9] w-auto max-w-[92vw] shrink-0 overflow-hidden border border-white/85 bg-[#0a0a0a]/40 md:col-start-2 md:mx-0"
               style={{ height: FRAME_HEIGHT }}
             >
+              {!isVideoLoaded && (
+                <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-[#0a0a0a]/60 via-[#1a1a1a]/50 to-[#0a0a0a]/60 opacity-100 transition-opacity duration-700 ease-out" />
+              )}
               <video
+                ref={videoRef}
                 src={websitesVideoSrc}
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="absolute inset-0 h-full w-full object-cover object-top"
+                className={`absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-700 ease-out ${
+                  isVideoLoaded ? "opacity-100" : "opacity-0"
+                }`}
               />
             </div>
 
