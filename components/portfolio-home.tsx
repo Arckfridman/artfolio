@@ -94,7 +94,7 @@ const tintByVariant: Record<WordVariant, string> = {
   strategy: "rgba(255, 77, 109, 0.06)",
   identity: "rgba(201, 240, 106, 0.05)",
   websites: "rgba(110, 200, 255, 0.06)",
-  other: "rgba(255, 179, 71, 0.05)",
+  other: "rgba(224, 123, 224, 0.05)",
 };
 
 export function PortfolioHome() {

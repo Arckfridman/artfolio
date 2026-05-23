@@ -14,7 +14,27 @@ const FRAME_HEIGHT = "calc((100dvh - 49px) * 0.7)";
 export function OtherPage() {
   const { navigateWithWipe } = useWipe();
   const [selected, setSelected] = useState(0);
+  const [wipePhase, setWipePhase] = useState<"idle" | "up" | "down">("idle");
+  const [pendingIndex, setPendingIndex] = useState<number | null>(null);
   const active = otherProjects[selected];
+
+  const handleProjectChange = (index: number) => {
+    if (index === selected || wipePhase !== "idle") return;
+    setPendingIndex(index);
+    setWipePhase("up");
+  };
+
+  const handleWipeUpComplete = () => {
+    if (pendingIndex !== null) {
+      setSelected(pendingIndex);
+      setPendingIndex(null);
+      setTimeout(() => setWipePhase("down"), 50);
+    }
+  };
+
+  const handleWipeDownComplete = () => {
+    setWipePhase("idle");
+  };
 
   return (
     <SiteChrome>
@@ -29,6 +49,28 @@ export function OtherPage() {
                 style={{ height: FRAME_HEIGHT }}
               >
                 <CinematicSlideshow key={active.id} images={active.frameImages} />
+                <AnimatePresence>
+                  {wipePhase === "up" && (
+                    <motion.div
+                      className="absolute inset-0 bg-white"
+                      initial={{ y: "100%" }}
+                      animate={{ y: "0%" }}
+                      exit={{ y: "100%" }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      onAnimationComplete={handleWipeUpComplete}
+                    />
+                  )}
+                  {wipePhase === "down" && (
+                    <motion.div
+                      className="absolute inset-0 bg-white"
+                      initial={{ y: "0%" }}
+                      animate={{ y: "100%" }}
+                      exit={{ y: "100%" }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      onAnimationComplete={handleWipeDownComplete}
+                    />
+                  )}
+                </AnimatePresence>
               </div>
 
               <aside
@@ -52,7 +94,7 @@ export function OtherPage() {
                 <li key={project.id}>
                   <motion.button
                     type="button"
-                    onClick={() => setSelected(index)}
+                    onClick={() => handleProjectChange(index)}
                     aria-label={`Select ${project.label}`}
                     aria-pressed={selected === index}
                     whileHover={{ scale: 1.05, y: -2 }}

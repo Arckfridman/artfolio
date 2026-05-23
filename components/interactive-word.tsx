@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export type WordVariant = "strategy" | "identity" | "websites" | "other";
 
@@ -100,9 +100,14 @@ export function InteractiveWord({
           className={[
             "relative z-10 cursor-pointer font-[family-name:var(--font-founders)] text-[0.9em] font-normal rounded-full border px-3 py-0.5 transition-all duration-200",
             show
-              ? "border-[#ffb347] bg-[#ffb347] text-[#121212]"
+              ? "border-transparent text-[#121212]"
               : "border-white/30 bg-transparent text-inherit",
           ].join(" ")}
+          style={{
+            background: show
+              ? "linear-gradient(135deg, #0066FF, #E07BE0)"
+              : "transparent",
+          }}
         >
           {children}
         </button>
