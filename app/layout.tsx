@@ -29,6 +29,24 @@ const rlUnno = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "Artur",
   description: "Strategy, identities, websites, and a whole mess of other stuff.",
+  openGraph: {
+    title: "Artur",
+    description: "Strategy, identities, websites, and a whole mess of other stuff.",
+    images: [
+      {
+        url: "/arckpreview.webp",
+        width: 1200,
+        height: 630,
+        alt: "Artur Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Artur",
+    description: "Strategy, identities, websites, and a whole mess of other stuff.",
+    images: ["/arckpreview.webp"],
+  },
 };
 
 export default function RootLayout({
