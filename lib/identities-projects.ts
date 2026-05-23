@@ -261,7 +261,7 @@ export const identityProjects: IdentityProject[] = [
   {
     id: "p7",
     label: "Space",
-    name: "Dreidel Drinkery",
+    name: "Jewish Bar",
     date: "2021-2024",
     country: "Russia",
     scope: "Visual identity, art direction, marketing, operational design",
