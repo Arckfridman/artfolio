@@ -157,8 +157,8 @@ export function StrategyCarousel({ onScrollStart }: StrategyCarouselProps) {
           : event.deltaY;
       if (Math.abs(delta) < 2) return;
 
-      if (delta > 0) step(-1);
-      else step(1);
+      if (delta > 0) step(1);
+      else step(-1);
     };
 
     window.addEventListener("wheel", onWheel, { passive: false });

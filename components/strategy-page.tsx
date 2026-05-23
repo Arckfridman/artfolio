@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { StrategyCarousel } from "./strategy-carousel";
 import { SiteChrome } from "./site-chrome";
 import { TypewriterText } from "./typewriter-text";
@@ -9,13 +9,36 @@ import { useWipe } from "./wipe-provider";
 
 const TEXT_DELAY = 0.55;
 
+const TICKER_ITEMS = [
+  "Market research",
+  "Brand positioning",
+  "Communication strategy",
+  "Go-to-market strategy",
+  "Hospitality & nightlife strategy",
+  "Investment & pitch narratives",
+  "Operational design systems",
+];
+
+const TICKER_INTERVAL = 3000;
+
 export function StrategyPage() {
   const { navigateWithWipe } = useWipe();
   const [showScrollPrompt, setShowScrollPrompt] = useState(true);
+  const [tickerIndex, setTickerIndex] = useState(0);
 
   const handleScrollStart = useCallback(() => {
     setShowScrollPrompt(false);
   }, []);
+
+  useEffect(() => {
+    if (showScrollPrompt) return;
+
+    const interval = setInterval(() => {
+      setTickerIndex((prev) => (prev + 1) % TICKER_ITEMS.length);
+    }, TICKER_INTERVAL);
+
+    return () => clearInterval(interval);
+  }, [showScrollPrompt]);
 
   return (
     <SiteChrome>
@@ -41,9 +64,16 @@ export function StrategyPage() {
                   />
                 </motion.span>
               ) : (
-                <span className="invisible" aria-hidden>
-                  Scroll
-                </span>
+                <motion.span
+                  key={tickerIndex}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.5 }}
+                  className="font-[family-name:var(--font-founders)] text-[clamp(0.85rem,1.5vw,1.1rem)] font-light tracking-normal text-white/30"
+                >
+                  {TICKER_ITEMS[tickerIndex]}
+                </motion.span>
               )}
             </AnimatePresence>
           </div>
