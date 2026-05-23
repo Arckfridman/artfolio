@@ -40,7 +40,7 @@ export function WebsitesPage() {
               style={{ height: FRAME_HEIGHT }}
             >
               {!isVideoLoaded && (
-                <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-[#0a0a0a]/60 via-[#1a1a1a]/50 to-[#0a0a0a]/60 opacity-100 transition-opacity duration-700 ease-out" />
+                <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1a1a1a]/80 opacity-100 transition-opacity duration-700 ease-out" />
               )}
               <video
                 ref={videoRef}
