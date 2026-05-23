@@ -194,6 +194,10 @@ export function PortfolioHome() {
           <div className="pointer-events-none absolute left-0 top-0 h-full w-px bg-white/10" aria-hidden />
           <div className="pointer-events-none absolute right-0 top-0 h-full w-px bg-white/10 md:hidden" aria-hidden />
 
+          <div className="pointer-events-none absolute bottom-6 right-6 font-[family-name:var(--font-founders)] text-[0.65em] font-normal uppercase tracking-[0.35em] text-white/20 sm:right-12 md:right-16 lg:right-24" aria-hidden>
+            Made by ARCK
+          </div>
+
           <div className="flex w-full max-w-6xl flex-col gap-12 md:flex-row md:items-start">
             <div className="flex-1">
               <div className="flex items-center gap-4">
