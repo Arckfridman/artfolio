@@ -34,7 +34,7 @@ const variantStyles: Record<
   },
   identity: {
     className:
-      "font-[family-name:var(--font-domaine)] italic text-[1.05em] tracking-normal",
+      "font-[family-name:var(--font-pp-editorial)] font-semibold italic text-[1.12em] tracking-normal",
     activeClass: "not-italic text-[#c9f06a]",
   },
   websites: {
@@ -98,7 +98,7 @@ export function InteractiveWord({
           data-active={show}
           {...buttonClickProps(onClick)}
           className={[
-            "relative z-10 cursor-pointer font-[family-name:var(--font-founders)] text-[0.9em] font-normal rounded-full border px-3 py-0.5 transition-all duration-200",
+            "relative z-10 cursor-pointer font-[family-name:var(--font-founders)] font-normal rounded-full border px-3 py-0.5 transition-all duration-200",
             show
               ? "border-transparent text-[#121212]"
               : "border-white/30 bg-transparent text-inherit",

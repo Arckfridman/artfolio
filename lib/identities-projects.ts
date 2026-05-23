@@ -28,6 +28,7 @@ export type IdentityProject = {
   blastImages: string[];
   frameImages: string[];
   particles: BurstParticle[];
+  detailTextColor?: string;
 };
 
 export const identityProjects: IdentityProject[] = [
@@ -164,6 +165,7 @@ export const identityProjects: IdentityProject[] = [
     backgroundGradient: "linear-gradient(to top, #e32213, #efeee6)",
     gradient: "linear-gradient(to top, #e32213, #efeee6)",
     thumbGradient: "linear-gradient(140deg, #0f0f0f 40%, #6ec8ff 100%)",
+    detailTextColor: "#000000",
     iconSrc: "/Identities projects/04 - Keter/Icon-4.webp",
     blastImages: [
       "/Identities projects/04 - Keter/blast-1.webp",
@@ -199,8 +201,10 @@ export const identityProjects: IdentityProject[] = [
     description:
       "A playful identity system for a Mexican street food brand, centered around a piñata-inspired llama character and animated typography.\n\nThe design focuses on immediate recognition and clarity, prioritizing readability and impact over conceptual depth.\n\nIncludes a 3D interior concept developed without on-site supervision.",
     brandColor: "#f5dc8e",
+    backgroundGradient: "linear-gradient(to top, #181789, #283888)",
     gradient: "linear-gradient(165deg, #151515 40%, #e85d04 95%)",
     thumbGradient: "linear-gradient(165deg, #151515 40%, #ffb347 100%)",
+    detailTextColor: "#ffffff",
     iconSrc: "/Identities projects/05 - Llamita/icon-5.webp",
     blastImages: [
       "/Identities projects/05 - Llamita/blast-1.webp",
@@ -233,7 +237,7 @@ export const identityProjects: IdentityProject[] = [
     scope: "Identity, event design",
     description:
       "A visual identity for a series of Russian-themed events in New York, inspired by NEP-era Soviet poster design.\n\nA simple yellow triangle and dot form the core of a flexible system that shifts between multiple symbolic interpretations while maintaining a consistent graphic language across all event materials.",
-    brandColor: "#cfc0ab",
+    brandColor: "#93857a",
     gradient: "linear-gradient(130deg, #121212 45%, #7b2cbf 100%)",
     thumbGradient: "linear-gradient(130deg, #121212 45%, #c77dff 100%)",
     iconSrc: "/Identities projects/06 - Vinegret/icon-6.webp",

@@ -26,6 +26,13 @@ const rlUnno = Bricolage_Grotesque({
   weight: ["400", "600", "700"],
 });
 
+const ppNewEditorial = Cormorant_Garamond({
+  variable: "--font-pp-editorial",
+  subsets: ["latin"],
+  weight: ["600"],
+  style: ["normal", "italic"],
+});
+
 export const metadata: Metadata = {
   title: "Artur",
   description: "Strategy, identities, websites, and a whole mess of other stuff.",
@@ -57,7 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${foundersGrotesk.variable} ${domaineDisplay.variable} ${rlUnno.variable} h-full antialiased`}
+      className={`${foundersGrotesk.variable} ${domaineDisplay.variable} ${rlUnno.variable} ${ppNewEditorial.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <LayoutClient>{children}</LayoutClient>

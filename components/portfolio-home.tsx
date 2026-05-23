@@ -114,7 +114,7 @@ export function PortfolioHome() {
 
       <main className="relative z-10 flex h-[calc(100vh-49px)] flex-col overflow-y-scroll snap-y snap-mandatory">
         <section className="flex min-h-full flex-col justify-end px-6 pb-[12vh] snap-start sm:px-12 md:px-16 lg:px-24">
-          <div className="max-w-5xl">
+          <div className="max-w-6xl">
             <p className="font-[family-name:var(--font-founders)] font-light text-[clamp(1.75rem,4.5vw,3.25rem)] leading-[1.4] tracking-normal text-[#d4d0c8]">
               <span className="mb-8 block text-[0.72em] font-normal uppercase tracking-[0.35em] text-[#8a8680]">
                 —
@@ -143,7 +143,7 @@ export function PortfolioHome() {
               >
                 identities
               </InteractiveWord>
-              ,{" "}
+              ,<br />{" "}
               <InteractiveWord
                 variant="websites"
                 previews={previewSets.websites}
@@ -167,7 +167,7 @@ export function PortfolioHome() {
               >
                 other stuff
               </InteractiveWord>
-              . Usually all at once
+              .<br />Usually all at once
             </p>
 
             <motion.p

@@ -44,7 +44,7 @@ export function IdentitiesPicker() {
   const active = selected !== null ? identityProjects[selected] : null;
   const hasSelection = selected !== null;
   const detailTextColor = active
-    ? getReadableTextColor(active.brandColor)
+    ? active.detailTextColor ?? getReadableTextColor(active.brandColor)
     : "#f5f5f0";
 
   const measureBurstOrigin = useCallback((): BurstOrigin => {
