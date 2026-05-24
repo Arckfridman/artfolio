@@ -189,6 +189,17 @@ export function PortfolioHome() {
           >
             artfolio / 26
           </div>
+
+          <div
+            className="pointer-events-none absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 opacity-40"
+            aria-hidden
+          >
+            <motion.div
+              className="h-3 w-3 rounded-full bg-[#d4d0c8]/40"
+              animate={{ y: [0, 6, 0], opacity: [0.3, 0.75, 0.3] }}
+              transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </div>
         </section>
 
         <section className="relative flex min-h-full flex-col justify-center px-6 py-20 snap-start sm:px-12 md:px-16 lg:px-24">
@@ -214,7 +225,7 @@ export function PortfolioHome() {
               </p>
 
               <p className="mt-6 font-[family-name:var(--font-founders)] text-[clamp(0.85rem,1.8vw,1.1rem)] font-light leading-relaxed tracking-normal text-[#8a8680]">
-                Bars, spaces, events, visual systems, communication, atmosphere, and especially transitional spaces.
+                Bars, spaces, events, visual systems, communication, atmosphere
               </p>
 
               <p className="mt-10 font-[family-name:var(--font-founders)] font-light text-[clamp(0.95rem,2vw,1.25rem)] leading-[1.5] tracking-normal text-[#d4d0c8]">
@@ -228,7 +239,7 @@ export function PortfolioHome() {
 
             <div className="flex flex-shrink-0 flex-col border-l border-white/10 pl-0 md:ml-12 md:pl-12">
               <div className="flex flex-col gap-2">
-                <p className="font-[family-name:var(--font-founders)] text-[clamp(1.2rem,2vw,1.5rem)] font-light tracking-normal text-[#d4d0c8]">
+                <p className="font-[family-name:var(--font-founders)] text-[clamp(1.2rem,2vw,1.5rem)] font-normal tracking-normal text-[#d4d0c8]">
                   Artur Fridman
                 </p>
                 <p className="font-[family-name:var(--font-founders)] text-[clamp(0.85rem,1.6vw,1.05rem)] font-light tracking-normal text-[#8a8680]">
