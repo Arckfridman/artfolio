@@ -9,6 +9,7 @@ import {
 } from "./interactive-word";
 import { SiteChrome } from "./site-chrome";
 import { useWipe } from "./wipe-provider";
+import { DiscoToggleButton } from "./disco-toggle-button";
 
 const previewSets: Record<WordVariant, PreviewCard[]> = {
   strategy: [
@@ -103,6 +104,7 @@ export function PortfolioHome() {
 
   return (
     <SiteChrome>
+      <DiscoToggleButton />
 
       <motion.div
         className="pointer-events-none fixed inset-0 z-0"
