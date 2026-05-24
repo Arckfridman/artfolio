@@ -242,7 +242,7 @@ export function IdentitiesPicker() {
           </svg>
         </button>
 
-        <p className="fixed bottom-8 right-6 z-30 font-[family-name:var(--font-founders)] text-sm font-light tracking-normal text-white/40 sm:right-12 md:right-16 lg:right-24">
+        <p className="fixed bottom-8 right-6 z-30 font-[family-name:var(--font-founders)] text-sm font-light tracking-normal text-white/20 sm:right-12 md:right-16 lg:right-24">
           Selected projects
         </p>
       </main>
