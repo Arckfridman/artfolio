@@ -572,7 +572,7 @@ export function DiscoToggleButton() {
         onClick={handleButtonClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="fixed top-6 right-4 z-[10000] flex h-16 w-16 items-center justify-center rounded-full border border-white/[0.03] text-xs backdrop-blur-sm transition-all hover:border-white/[0.05] sm:top-12 sm:right-8 sm:h-20 sm:w-20 md:top-16 md:right-12 lg:top-24 lg:right-20"
+        className="fixed top-6 right-4 z-[10000] flex h-16 w-16 items-center justify-center rounded-full border border-white/[0.12] text-xs backdrop-blur-sm transition-all hover:border-white/[0.18] sm:top-12 sm:right-8 sm:h-20 sm:w-20 md:top-16 md:right-12 lg:top-24 lg:right-20"
       >
         <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full">
           {/* Text content with fade transitions */}
@@ -580,7 +580,7 @@ export function DiscoToggleButton() {
             {buttonState === 'idle' && (
               <motion.div
                 key="idle"
-                className={`relative z-10 flex flex-col items-center gap-0.5 transition-all duration-300 ${isHovered ? 'text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' : 'text-white/15'}`}
+                className={`relative z-10 flex flex-col items-center gap-0.5 transition-all duration-300 ${isHovered ? 'text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' : 'text-white/50'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}

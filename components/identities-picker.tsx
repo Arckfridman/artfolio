@@ -14,6 +14,7 @@ import {
   identityProjects,
 } from "@/lib/identities-projects";
 import { useWipe } from "./wipe-provider";
+import { Lexend_Peta } from "next/font/google";
 
 const TEXT_DELAY = 0.55;
 const MARQUEE_HEIGHT = 49;
