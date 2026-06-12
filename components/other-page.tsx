@@ -89,9 +89,9 @@ export function OtherPage() {
               </aside>
             </div>
 
-            <ul className="relative z-20 mt-10 flex max-w-[92vw] flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+            <ul className="relative z-20 mt-10 flex max-w-[calc(14*2.5rem+13*0.625rem)] flex-wrap items-center justify-center gap-2.5 sm:max-w-[calc(14*2.75rem+13*0.75rem)] sm:gap-3">
               {otherProjects.map((project, index) => (
-                <li key={project.id}>
+                <li key={project.id} className={index >= 14 && index % 14 === 0 ? "ml-[calc((2.5rem+0.625rem)/2)] sm:ml-[calc((2.75rem+0.75rem)/2)]" : ""}>
                   <motion.button
                     type="button"
                     onClick={() => handleProjectChange(index)}

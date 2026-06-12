@@ -99,6 +99,8 @@ export const otherProjects: OtherProject[] = [
       "/Other/7 - labels/01-05.webp",
       "/Other/7 - labels/01-06.webp",
       "/Other/7 - labels/01-07.webp",
+      "/Other/7 - labels/01-08.webp",
+      "/Other/7 - labels/01-09.webp",
     ],
     iconSrc: "/Other/7 - labels/01-01.webp",
     thumbGradient: "linear-gradient(170deg, #141414 35%, #9d4edd 90%)",
@@ -164,5 +166,119 @@ export const otherProjects: OtherProject[] = [
     ],
     iconSrc: "/Other/11 - shots/01-01.webp",
     thumbGradient: "linear-gradient(155deg, #111 40%, #e85d04 100%)",
+  },
+  {
+    id: "o12",
+    label: "Kult",
+    description:
+      "Visual exploration for a nail salon identity in New York's Lower East Side. Graphic Design.",
+    frameImages: [
+      "/Other/12 - kult/01.webp",
+      "/Other/12 - kult/02.webp",
+      "/Other/12 - kult/03.webp",
+      "/Other/12 - kult/04.webp",
+    ],
+    iconSrc: "/Other/12 - kult/01.webp",
+    thumbGradient: "linear-gradient(145deg, #1a1a1a 40%, #ff6b6b 100%)",
+  },
+  {
+    id: "o13",
+    label: "Union",
+    description:
+      "Visual identity for a jazz bar in Georgia.",
+    frameImages: [
+      "/Other/13 - union/01.webp",
+      "/Other/13 - union/02.webp",
+    ],
+    iconSrc: "/Other/13 - union/01.webp",
+    thumbGradient: "linear-gradient(150deg, #0f0f0f 50%, #4a90e2 100%)",
+  },
+  {
+    id: "o14",
+    label: "Bix Birthday",
+    description:
+      "Poster series for a jazz bar anniversary in Moscow. Graphic design",
+    frameImages: [
+      "/Other/14 - bix birthday posters/01.webp",
+      "/Other/14 - bix birthday posters/02.webp",
+      "/Other/14 - bix birthday posters/03.webp",
+      "/Other/14 - bix birthday posters/04.webp",
+    ],
+    iconSrc: "/Other/14 - bix birthday posters/01.webp",
+    thumbGradient: "linear-gradient(140deg, #151515 45%, #ffd93d 100%)",
+  },
+  {
+    id: "o15",
+    label: "Spiros",
+    description:
+      "Wall decoration concept for a Greek restaurant in Kazakhstan. Idea, visualisation",
+    frameImages: [
+      "/Other/15 - Spiros/01.webp",
+      "/Other/15 - Spiros/02.webp",
+      "/Other/15 - Spiros/03.webp",
+      "/Other/15 - Spiros/04.webp",
+    ],
+    iconSrc: "/Other/15 - Spiros/01.webp",
+    thumbGradient: "linear-gradient(135deg, #0d0d0d 50%, #6bcf7f 100%)",
+  },
+  {
+    id: "o16",
+    label: "Dreidel",
+    description:
+      "Visual identity for a Jewish cocktail bar in Tbilisi.",
+    frameImages: [
+      "/Other/16 - Dreidel/01.webp",
+      "/Other/16 - Dreidel/02.webp",
+      "/Other/16 - Dreidel/03.webp",
+      "/Other/16 - Dreidel/04.webp",
+    ],
+    iconSrc: "/Other/16 - Dreidel/01.webp",
+    thumbGradient: "linear-gradient(145deg, #111 40%, #9b59b6 100%)",
+  },
+  {
+    id: "o17",
+    label: "Leor",
+    description:
+      "Retouching and post-production for a Swiss leather goods brand",
+    frameImages: [
+      "/Other/17 - Leor/01.webp",
+      "/Other/17 - Leor/02.webp",
+    ],
+    iconSrc: "/Other/17 - Leor/01.webp",
+    thumbGradient: "linear-gradient(150deg, #0a0a0a 55%, #e74c3c 100%)",
+  },
+  {
+    id: "o18",
+    label: "Posters TA",
+    description:
+      "Graphic poster series dedicated to Tel Aviv for a bar in Israel.",
+    frameImages: [
+      "/Other/18 - posters TA/01.webp",
+      "/Other/18 - posters TA/02.webp",
+    ],
+    iconSrc: "/Other/18 - posters TA/01.webp",
+    thumbGradient: "linear-gradient(140deg, #121212 50%, #3498db 100%)",
+  },
+  {
+    id: "o19",
+    label: "Matches",
+    description:
+      "Matchbox packaging design inspired by Art Deco.",
+    frameImages: [
+      "/Other/19 - matches/01.webp",
+    ],
+    iconSrc: "/Other/19 - matches/01.webp",
+    thumbGradient: "linear-gradient(155deg, #0f0f0f 45%, #f39c12 100%)",
+  },
+  {
+    id: "o20",
+    label: "Bandana",
+    description:
+      "Bandana pattern design for Takamaka.",
+    frameImages: [
+      "/Other/20 - bandana/01.webp",
+    ],
+    iconSrc: "/Other/20 - bandana/01.webp",
+    thumbGradient: "linear-gradient(145deg, #0e0e0e 50%, #1abc9c 100%)",
   },
 ];
