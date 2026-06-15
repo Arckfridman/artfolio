@@ -212,7 +212,7 @@ export function PortfolioHome() {
           </div>
 
           <div className="flex w-full max-w-6xl flex-col gap-12 md:flex-row md:items-start">
-            <div className="flex-1">
+            <div className="flex-1 max-w-5xl">
               <div className="flex items-center gap-4">
                 <div className="h-px w-12 bg-white/20" aria-hidden />
                 <p className="font-[family-name:var(--font-founders)] text-[0.65em] font-normal uppercase tracking-[0.5em] text-[#6a6660]">
@@ -221,23 +221,19 @@ export function PortfolioHome() {
               </div>
 
               <p className="mt-8 font-[family-name:var(--font-founders)] font-light text-[clamp(0.95rem,2vw,1.25rem)] leading-[1.6] tracking-normal text-[#d4d0c8]">
-                I often work beyond design, helping founders shape hospitality and cultural concepts from idea to reality. I am very interested in transitions, the ever-changing nature of things, and building adaptive systems and designs.
+                The portfolio covers a lot of ground – identities, strategies, immersive shows, exhibitions, events, games, spaces, film. Mostly because I find it hard to say no to something new and interesting.
               </p>
 
-              <p className="mt-6 font-[family-name:var(--font-founders)] text-[clamp(0.85rem,1.8vw,1.1rem)] font-light leading-relaxed tracking-normal text-[#8a8680]">
-                Bars, spaces, events, visual systems, communication, atmosphere
+              <p className="mt-6 font-[family-name:var(--font-founders)] font-light text-[clamp(0.95rem,2vw,1.25rem)] leading-[1.6] tracking-normal text-[#d4d0c8]">
+                The common thread: projects that create some kind of experience for people. The kind you actually remember.
               </p>
 
               <p className="mt-10 font-[family-name:var(--font-founders)] font-light text-[clamp(0.95rem,2vw,1.25rem)] leading-[1.5] tracking-normal text-[#d4d0c8]">
-                Interested in projects made by people, for people.
-              </p>
-
-              <p className="mt-6 font-[family-name:var(--font-founders)] text-[clamp(0.85rem,1.8vw,1.1rem)] font-light leading-relaxed tracking-normal text-[#6a6660]">
-                If that sounds close to what you're building, feel free to get in touch.
+                Get in touch —
               </p>
             </div>
 
-            <div className="flex flex-shrink-0 flex-col border-l border-white/10 pl-0 md:ml-12 md:pl-12">
+            <div className="flex flex-shrink-0 flex-col border-l border-white/10 pl-0 md:ml-8 md:pl-8">
               <div className="flex flex-col gap-2">
                 <p className="font-[family-name:var(--font-founders)] text-[clamp(1.2rem,2vw,1.5rem)] font-normal tracking-normal text-[#d4d0c8]">
                   Artur Fridman
@@ -292,6 +288,22 @@ export function PortfolioHome() {
                 </svg>
                 <span>+39 379 238 9672</span>
               </a>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <p className="font-[family-name:var(--font-founders)] text-[clamp(0.85rem,1.6vw,1.05rem)] font-light leading-relaxed tracking-normal text-[#6a6660]">
+                  If you're looking for something more structured —
+                </p>
+                <a
+                  href="/Fridman CV.pdf"
+                  download
+                  className="mt-3 inline-flex items-center gap-2 font-[family-name:var(--font-founders)] text-[clamp(0.9rem,1.8vw,1.15rem)] font-light tracking-normal text-[#d4d0c8] transition-all hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]"
+                >
+                  <svg className="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg>
+                  <span>Download CV</span>
+                </a>
               </div>
             </div>
           </div>
