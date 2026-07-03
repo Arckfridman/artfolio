@@ -34,6 +34,7 @@ const ppNewEditorial = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: "Artur",
   description: "Strategy, identities, websites, and a whole mess of other stuff.",
   openGraph: {

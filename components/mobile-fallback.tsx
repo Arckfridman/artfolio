@@ -29,7 +29,7 @@ export function MobileFallback() {
         className="px-8 text-center"
       >
         <p className="font-[family-name:var(--font-founders)] text-[clamp(1.2rem,4vw,1.8rem)] font-light leading-[1.5] tracking-normal text-[#d4d0c8]">
-          It&apos;s such a tiny-winnie screen, I literally can&apos;t. Please use a laptop.
+          This site looks great on desktop and mediocre on mobile. Let's just skip mediocre
         </p>
       </motion.div>
     </div>
